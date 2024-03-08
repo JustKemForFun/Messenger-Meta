@@ -2,9 +2,9 @@ This repo is a fork from main repo and will usually have new features bundled fa
 
 # Messendger-Meta Facebook Chat API
 <a href="https://www.npmjs.com/package/messendger-meta"><img alt="npm version" src="https://img.shields.io/npm/v/messendger-meta.svg?style=flat-square"></a>
-<img alt="version" src="https://img.shields.io/github/package-json/v/shinchan0911/messendger-meta?label=github&style=flat-square">
+<img alt="version" src="https://img.shields.io/github/package-json/v/JustKemForFun/Messendger-Meta?label=github&style=flat-square">
 <a href="https://www.npmjs.com/package/messendger-meta"><img src="https://img.shields.io/npm/dm/messendger-meta.svg?style=flat-square" alt="npm downloads"></a>
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Facebook now has an official API for chat bots [here](https://developers.facebook.com/docs/messenger-platform).
 
