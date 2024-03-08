@@ -1,6 +1,6 @@
 {
   "name": "messendger-meta",
-  "version": "1.0.0-Beta",
+  "version": "1.0.0",
   "description": "Facebook Chat API",
   "author": "Avery, David, Maude, Benjamin, ShinTHL09, KanzuWakazaki, Disme, NTKhang, Kem",
   "dependencies": {
