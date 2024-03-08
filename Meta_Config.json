@@ -1,0 +1,24 @@
+{
+  "Config_Version": "1.0.0",
+  "Auto_Update": true,
+  "Auto_Uptime": true,
+  "Auto_Login": false,
+  "Encrypt_Appstate": true,
+  "Create_Html_Site": {
+    "Enable": false,
+    "Port": 8080
+  },
+  "Count_Online_Time": {
+    "Enable": true,
+    "Format": "{day} Day : {hour} Hour : {minute} Minute" 
+  },
+  "Restart_MQTT": {
+    "Enable": false,
+    "Minutes": 0
+  },
+  "Auto_Restart": {
+    "Enable": false,
+    "Minutes": 0
+  },
+  "Change_Environment": false
+}

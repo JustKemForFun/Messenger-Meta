@@ -1,0 +1,42 @@
+{
+  "name": "messendger-meta",
+  "version": "1.0.0-Beta",
+  "description": "Facebook Chat API",
+  "author": "Avery, David, Maude, Benjamin, ShinTHL09, KanzuWakazaki, Disme, NTKhang, Kem",
+  "dependencies": {
+    "aes-js": "^3.1.2",
+    "axios": "latest",
+    "better-sqlite3": "7.6.2",
+    "bluebird": "^2.11.0",
+    "chalk": "4.1.2",
+    "chalkercli": "^1.6.4",
+    "cheerio": "latest",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "express": "latest",
+    "figlet": "^1.5.2",
+    "https-proxy-agent": "latest",
+    "mqtt": "latest",
+    "npmlog": "latest",
+    "os": "^0.1.2",
+    "request": "latest",
+    "semver": "latest",
+    "websocket-stream": "latest",
+    "readline": "latest"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "keywords": [
+    "facebook",
+    "chat",
+    "api",
+    "messendger-meta"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint **.js",
+    "prettier": "prettier utils.js src/* --write",
+    "test": "mocha"
+  }
+}
