@@ -29,7 +29,7 @@ It will download `messendger-meta` from NPM repositories
 ### Bleeding edge
 If you want to use bleeding edge (directly from github) to test new features or submit bug report, this is the command for you:
 ```bash
-npm install shinchan0911/messendger-meta
+npm install JustKemForFunJustKemForFun/messendger-meta
 ```
 
 ## Testing your bots
