@@ -1,6 +1,6 @@
 This repo is a fork from main repo and will usually have new features bundled faster than main repo (and maybe bundle some bugs, too).
 
-# messendger-meta Facebook Chat API
+# Messendger-Meta Facebook Chat API
 <a href="https://www.npmjs.com/package/messendger-meta"><img alt="npm version" src="https://img.shields.io/npm/v/messendger-meta.svg?style=flat-square"></a>
 <img alt="version" src="https://img.shields.io/github/package-json/v/shinchan0911/messendger-meta?label=github&style=flat-square">
 <a href="https://www.npmjs.com/package/messendger-meta"><img src="https://img.shields.io/npm/dm/messendger-meta.svg?style=flat-square" alt="npm downloads"></a>
