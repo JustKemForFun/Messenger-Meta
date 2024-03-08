@@ -1,5 +1,5 @@
 {
-  "name": "messendger-meta",
+  "name": "messenger-meta",
   "version": "1.0.0",
   "description": "Facebook Chat API",
   "author": "Avery, David, Maude, Benjamin, ShinTHL09, KanzuWakazaki, Disme, NTKhang, Kem",
@@ -31,7 +31,7 @@
     "facebook",
     "chat",
     "api",
-    "messendger-meta"
+    "messenger-meta"
   ],
   "license": "MIT",
   "scripts": {
