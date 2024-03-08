@@ -1,9 +1,9 @@
 This repo is a fork from main repo and will usually have new features bundled faster than main repo (and maybe bundle some bugs, too).
 
-# Messendger-Meta Facebook Chat API
-<a href="https://www.npmjs.com/package/messendger-meta"><img alt="npm version" src="https://img.shields.io/npm/v/messendger-meta.svg?style=flat-square"></a>
-<img alt="version" src="https://img.shields.io/github/package-json/v/JustKemForFun/Messendger-Meta?label=github&style=flat-square">
-<a href="https://www.npmjs.com/package/messendger-meta"><img src="https://img.shields.io/npm/dm/messendger-meta.svg?style=flat-square" alt="npm downloads"></a>
+# Messenger-Meta Facebook Chat API
+<a href="https://www.npmjs.com/package/messenger-meta"><img alt="npm version" src="https://img.shields.io/npm/v/messenger-meta.svg?style=flat-square"></a>
+<img alt="version" src="https://img.shields.io/github/package-json/v/JustKemForFun/Messenger-Meta?label=github&style=flat-square">
+<a href="https://www.npmjs.com/package/messenger-meta"><img src="https://img.shields.io/npm/dm/messenger-meta.svg?style=flat-square" alt="npm downloads"></a>
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Facebook now has an official API for chat bots [here](https://developers.facebook.com/docs/messenger-platform).
@@ -20,16 +20,16 @@ See the [full changelog](/CHANGELOG.md) for release details.
 This project is only available for bots that use listenMqtt
 
 ## Install
-If you just want to use messendger-meta, you should use this command:
+If you just want to use messenger-meta, you should use this command:
 ```bash
-npm install messendger-meta
+npm install messenger-meta
 ```
-It will download `messendger-meta` from NPM repositories
+It will download `messenger-meta` from NPM repositories
 
 ### Bleeding edge
 If you want to use bleeding edge (directly from github) to test new features or submit bug report, this is the command for you:
 ```bash
-npm install JustKemForFunJustKemForFun/messendger-meta
+npm install JustKemForFun/messenger-meta
 ```
 
 ## Testing your bots
@@ -37,7 +37,7 @@ If you want to test your bots without creating another account on Facebook, you 
 
 ## Example Usage
 ```javascript
-const login = require("messendger-meta");
+const login = require("messenger-meta");
 
 // Create simple echo bot
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
@@ -76,7 +76,7 @@ __Tip__: to find your own ID, you can look inside the cookies. The `userID` is u
 
 __Example (Basic Message)__
 ```js
-const login = require("messendger-meta");
+const login = require("messenger-meta");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -89,7 +89,7 @@ login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
 
 __Example (File upload)__
 ```js
-const login = require("messendger-meta");
+const login = require("messenger-meta");
 
 login({email: "FB_EMAIL", password: "FB_PASSWORD"}, (err, api) => {
     if(err) return console.error(err);
@@ -113,7 +113,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("messendger-meta");
+const login = require("messenger-meta");
 
 var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"};
 
@@ -137,7 +137,7 @@ __Example__
 
 ```js
 const fs = require("fs");
-const login = require("messendger-meta");
+const login = require("messenger-meta");
 
 // Simple echo bot. It will repeat everything that you say.
 // Will stop when you say '/stop'
