@@ -146,7 +146,7 @@ async function Change_Environment() {
 
 async function Auto_Update(config) {
     logger('Auto Check Update ...', "[ Meta ]");
-    axios.get('https://raw.githubusercontent.com/cac/Messendger-Meta/main/Meta_Config.json').then(async (res) => {
+    axios.get('https://raw.githubusercontent.com/JustKemForFun/Messendger-Meta/main/Meta_Config.json').then(async (res) => {
         if (res.data.Config_Version != config.Config_Version) {
             logger(`New Config Version Published: ${config.Config_Version} => ${res.data.Config_Version}`, "[ Meta ]");
             logger(`Perform Automatic Update Config to the Latest Version !`, "[ Meta ]");
@@ -157,7 +157,7 @@ async function Auto_Update(config) {
             console.clear(), process.exit(1);
         }
     });
-    axios.get('https://raw.githubusercontent.com/cac/Messendger-Meta/main/package.json').then(async (res) => {
+    axios.get('https://raw.githubusercontent.com/JustKemForFun/Messendger-Meta/main/package.json').then(async (res) => {
         const localbrand = JSON.parse(readFileSync('./node_modules/messendger-meta/package.json')).version;
         if (localbrand != res.data.version) {
             logger(`New Version Published: ${JSON.parse(readFileSync('./node_modules/messendger-meta/package.json')).version} => ${res.data.version}`, "[ messendger-meta ]");
