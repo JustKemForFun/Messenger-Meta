@@ -84,25 +84,25 @@ function listenMqtt(defaultFuncs, api, ctx, globalCallback) {
 
     mqttClient.on('connect', function () {
         if (process.env.OnStatus == undefined) {
-            if (require(process.cwd() + "/MetaCord_Config.json").Count_Online_Time.Enable) {
+            if (require(process.cwd() + "/Meta_Config.json").Count_Online_Time.Enable) {
                 const extension = require('../utils/Extension');
                 extension.StartCountOnlineTime();
                 const { day, hour, minute } = extension.GetCountOnlineTime();
                 logger(`Your Bot is now running: ${day} day | ${hour} hour | ${minute} minute`);
             }
-            if (require(process.cwd() + "/MetaCord_Config.json").Restart_MQTT.Enable || require(process.cwd() + "/MetaCord_Config.json").Restart_MQTT.Minutes > 0) {
+            if (require(process.cwd() + "/Meta_Config.json").Restart_MQTT.Enable || require(process.cwd() + "/Meta_Config.json").Restart_MQTT.Minutes > 0) {
                 setTimeout(() => {
                     logger("Closing MQTT Client...");
                     ctx.mqttClient.end();
                     logger("Reconnecting MQTT Client...");
                     getSeqID();
-                }, Number(require(process.cwd() + "/MetaCord_Config.json").Restart_MQTT.Minutes) * 60 * 1000);
+                }, Number(require(process.cwd() + "/Meta_Config.json").Restart_MQTT.Minutes) * 60 * 1000);
             }
-            if (require(process.cwd() + "/MetaCord_Config.json").Auto_Restart.Enable || require(process.cwd() + "/MetaCord_Config.json").Auto_Restart.Minutes > 0) {
+            if (require(process.cwd() + "/Meta_Config.json").Auto_Restart.Enable || require(process.cwd() + "/Meta_Config.json").Auto_Restart.Minutes > 0) {
                 setTimeout(() => {
                     logger("Auto Restart Your Bot !");
                     process.exit(1);
-                }, Number(require(process.cwd() + "/MetaCord_Config.json").Auto_Restart.Minutes) * 60 * 1000);
+                }, Number(require(process.cwd() + "/Meta_Config.json").Auto_Restart.Minutes) * 60 * 1000);
             }
             process.env.OnStatus = true;
         }
