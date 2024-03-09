@@ -1,6 +1,6 @@
 {
   "name": "messenger-meta",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Facebook Chat API",
   "author": "Avery, David, Maude, Benjamin, ShinTHL09, KanzuWakazaki, Disme, NTKhang, Kem",
   "dependencies": {
